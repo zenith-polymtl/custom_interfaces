@@ -11,6 +11,20 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
+find_package(rosidl_default_generators REQUIRED)
+find_package(std_msgs REQUIRED)
+
+# Add message files
+set(msg_files
+  "msg/TargetPosePolar.msg"
+)
+
+rosidl_generate_interfaces(${PROJECT_NAME}
+  "msg/TargetPosePolar.msg"
+  DEPENDENCIES std_msgs
+)
+
+
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
   # the following line skips the linter which checks for copyrights

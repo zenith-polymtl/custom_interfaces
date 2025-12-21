@@ -17,10 +17,12 @@ find_package(std_msgs REQUIRED)
 # Add message files
 set(msg_files
   "msg/TargetPosePolar.msg"
+  "msg/WaterState.msg"
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/TargetPosePolar.msg"
+  "msg/WaterState.msg"
   DEPENDENCIES std_msgs
 )
 

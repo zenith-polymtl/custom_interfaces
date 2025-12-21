@@ -1,0 +1,3 @@
+NavSatFix gps_point
+---
+PoseStamped local_point

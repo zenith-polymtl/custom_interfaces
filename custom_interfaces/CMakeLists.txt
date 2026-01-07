@@ -20,6 +20,7 @@ find_package(geometry_msgs REQUIRED)
 set(msg_files
   "msg/TargetPosePolar.msg"
   "msg/WaterState.msg"
+  "msg/AimError.msg"
   "msg/Pixels.msg"
 )
 
@@ -27,6 +28,8 @@ set(msg_files
 rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/TargetPosePolar.msg"
   "msg/WaterState.msg"
+  "msg/AimError.msg"
+  "srv/ServoState.srv"
   "msg/Pixels.msg"
   "srv/ConvertGpsToLocal.srv"
   DEPENDENCIES std_msgs sensor_msgs geometry_msgs

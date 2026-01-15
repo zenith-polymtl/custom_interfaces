@@ -1,2 +1,2 @@
-float yaw_error
-float pitch_error
+float32 yaw_error
+float32 pitch_error

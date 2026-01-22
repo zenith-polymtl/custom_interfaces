@@ -1,3 +1,4 @@
 sensor_msgs/NavSatFix gps_point
 ---
 geometry_msgs/PoseStamped local_point
+bool success

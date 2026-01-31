@@ -23,6 +23,8 @@ set(msg_files
   "msg/AimError.msg"
   "msg/Pixels.msg"
   "msg/UiMessage.msg"
+  "msg/PayloadState.msg"
+
 )
 
 
@@ -31,6 +33,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/WaterState.msg"
   "msg/AimError.msg"
   "msg/UiMessage.msg"
+  "msg/PayloadState.msg"
   "srv/ServoState.srv"
   "msg/Pixels.msg"
   "srv/ConvertGpsToLocal.srv"

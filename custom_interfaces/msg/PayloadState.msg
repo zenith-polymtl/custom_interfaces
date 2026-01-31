@@ -1,0 +1,10 @@
+uint8 INITAL_STATE=0
+uint8 TAKEOFF=1
+uint8 LAP_STARTED=2
+uint8 STOPING_LAPS=3
+uint8 GOING_TO_SITE=4
+uint8 IS_ON_SITE=5
+
+
+uint8 mode
+

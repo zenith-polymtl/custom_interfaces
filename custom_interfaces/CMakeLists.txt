@@ -24,7 +24,7 @@ set(msg_files
   "msg/Pixels.msg"
   "msg/UiMessage.msg"
   "msg/PayloadState.msg"
-
+  "msg/GimbalState.msg"
 )
 
 
@@ -34,6 +34,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/AimError.msg"
   "msg/UiMessage.msg"
   "msg/PayloadState.msg"
+  "msg/GimbalState.msg"
   "srv/ServoState.srv"
   "msg/Pixels.msg"
   "srv/ConvertGpsToLocal.srv"

@@ -35,10 +35,13 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/AimError.msg"
   "msg/UiMessage.msg"
   "msg/PayloadState.msg"
-  "srv/ServoState.srv"
   "msg/Pixels.msg"
   "msg/GimbalState.msg"
+  "srv/ServoState.srv"
   "srv/ConvertGpsToLocal.srv"
+  "srv/LocateTarget.srv"
+  "srv/ConvertCamDistToLocalDist.srv"
+
   
   DEPENDENCIES std_msgs sensor_msgs geometry_msgs
 )

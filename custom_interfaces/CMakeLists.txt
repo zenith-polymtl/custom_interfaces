@@ -23,6 +23,7 @@ set(msg_files
   "msg/AimError.msg"
   "msg/Pixels.msg"
   "msg/UiMessage.msg"
+  "msg/DroneHealth.msg"
   "msg/PayloadState.msg"
   "msg/GimbalState.msg"
 
@@ -34,6 +35,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/WaterState.msg"
   "msg/AimError.msg"
   "msg/UiMessage.msg"
+  "msg/DroneHealth.msg"
   "msg/PayloadState.msg"
   "msg/Pixels.msg"
   "msg/GimbalState.msg"

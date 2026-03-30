@@ -23,6 +23,7 @@ set(msg_files
   "msg/AimError.msg"
   "msg/Pixels.msg"
   "msg/UiMessage.msg"
+  "msg/DroneHealth.msg"
   "msg/PayloadState.msg"
   "msg/GimbalState.msg"
   "msg/SceneFrame.msg"
@@ -34,12 +35,16 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/WaterState.msg"
   "msg/AimError.msg"
   "msg/UiMessage.msg"
+  "msg/DroneHealth.msg"
   "msg/PayloadState.msg"
   "msg/GimbalState.msg"
   "msg/SceneFrame.msg"
-  "srv/ServoState.srv"
   "msg/Pixels.msg"
+  "srv/ServoState.srv"
   "srv/ConvertGpsToLocal.srv"
+  "srv/LocateTarget.srv"
+  "srv/ConvertCamDistToLocalDist.srv"
+
   
   DEPENDENCIES std_msgs sensor_msgs geometry_msgs
 )

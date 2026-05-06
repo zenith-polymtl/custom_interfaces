@@ -27,6 +27,7 @@ set(msg_files
   "msg/PayloadState.msg"
   "msg/GimbalState.msg"
   "msg/SceneFrame.msg"
+  "msg/ServoControl.msg"
 )
 
 
@@ -40,6 +41,7 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/GimbalState.msg"
   "msg/SceneFrame.msg"
   "msg/Pixels.msg"
+  "msg/ServoControl.msg"
   "srv/ServoState.srv"
   "srv/ConvertGpsToLocal.srv"
   "srv/LocateTarget.srv"

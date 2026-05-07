@@ -1,2 +1,2 @@
-std_msgs/int32 servo_num
-std_msgs/int32 pwm
+uint32 servo_num
+uint32 pwm

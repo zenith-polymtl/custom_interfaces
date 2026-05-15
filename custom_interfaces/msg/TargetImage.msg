@@ -1,0 +1,2 @@
+string image_path
+int32 target_num

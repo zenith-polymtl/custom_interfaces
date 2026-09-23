@@ -33,25 +33,16 @@ set(msg_files
 )
 
 
-rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/TargetPosePolar.msg"
-  "msg/WaterState.msg"
-  "msg/AimError.msg"
-  "msg/UiMessage.msg"
-  "msg/DroneHealth.msg"
-  "msg/PayloadState.msg"
-  "msg/GimbalState.msg"
-  "msg/SceneFrame.msg"
-  "msg/Pixels.msg"
-  "msg/ServoControl.msg"
-  "msg/TargetImage.msg"
-  "msg/MissionState.msg"
+set(srv_files
   "srv/ServoState.srv"
   "srv/ConvertGpsToLocal.srv"
   "srv/LocateTarget.srv"
   "srv/ConvertCamDistToLocalDist.srv"
+)
 
-  
+rosidl_generate_interfaces(${PROJECT_NAME}
+  ${msg_files}
+  ${srv_files}
   DEPENDENCIES std_msgs sensor_msgs geometry_msgs
 )
 

@@ -1,5 +1,5 @@
 # État courant d'une mission. Les constantes sont la seule définition des états :
-# aucun nœud ne redéfinit ces valeurs (règle P17).
+# aucune node ne redéfinit ces valeurs.
 uint8 IDLE=0
 uint8 GOTO=1
 uint8 ACT=2

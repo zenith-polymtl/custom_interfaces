@@ -15,6 +15,7 @@ find_package(rosidl_default_generators REQUIRED)
 find_package(std_msgs REQUIRED)
 find_package(sensor_msgs REQUIRED)
 find_package(geometry_msgs REQUIRED)
+find_package(builtin_interfaces REQUIRED)
 
 # Add message files
 set(msg_files
@@ -30,6 +31,11 @@ set(msg_files
   "msg/SceneFrame.msg"
   "msg/ServoControl.msg"
   "msg/MissionState.msg"
+  "msg/Traffic.msg"
+  "msg/TrafficArray.msg"
+  "msg/CompTelemetryAck.msg"
+  "msg/CompInfraction.msg"
+  "msg/CompStatus.msg"
 )
 
 
@@ -43,7 +49,7 @@ set(srv_files
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
   ${srv_files}
-  DEPENDENCIES std_msgs sensor_msgs geometry_msgs
+  DEPENDENCIES builtin_interfaces std_msgs sensor_msgs geometry_msgs
 )
 
 

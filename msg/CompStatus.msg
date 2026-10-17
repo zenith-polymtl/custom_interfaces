@@ -14,3 +14,6 @@ uint32 acked                    # telemetry_ack reçus
 uint32 errors                   # événements `error` du serveur reçus
 uint32 connections              # connexions ouvertes depuis le démarrage (1 = jamais reconnecté)
 string last_error               # dernier `error` du serveur ou dernière erreur de connexion ; vide si aucune
+float32 traffic_latency_s       # latence du trafic utilisée pour le dater : aller-retour télémétrie -> accusé / 2 (+ délai serveur supposé), s ; -1 = pas encore mesurée
+float32 traffic_rx_phase_s      # phase de réception du trafic dans la seconde (horloge de la machine), moyenne circulaire, s ; -1 = inconnue.
+                                # Si le serveur envoie sur les secondes rondes et que l'horloge est synchronisée : la latence dans le sens serveur -> drone

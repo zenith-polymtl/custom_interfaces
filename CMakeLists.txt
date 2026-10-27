@@ -36,6 +36,8 @@ set(msg_files
   "msg/CompTelemetryAck.msg"
   "msg/CompInfraction.msg"
   "msg/CompStatus.msg"
+  "msg/DriveSubmit.msg"
+  "msg/DriveStatus.msg"
 )
 
 

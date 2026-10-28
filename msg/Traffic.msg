@@ -1,5 +1,5 @@
 # Un avion du trafic, tel que le serveur de compétition le pousse (événement `traffic`, 1 Hz).
-# Les champs suivent le JSON du serveur (laps_plan_operationnel_research.md §1).
+# Les champs suivent le JSON du serveur (documentation publique, page Connect de aeac.mylonics.com).
 # Conflit selon le serveur : distance horizontale <= horizontal_keep_away
 # ET |notre altitude AGL déclarée - altitude_agl| <= vertical_keep_away.
 

@@ -38,6 +38,12 @@ set(msg_files
   "msg/CompStatus.msg"
   "msg/DriveSubmit.msg"
   "msg/DriveStatus.msg"
+  "msg/NavMode.msg"
+  "msg/NavPoint.msg"
+  "msg/NavGate.msg"
+  "msg/NavIntent.msg"
+  "msg/VelocityIntent.msg"
+  "msg/GuidanceStatus.msg"
 )
 
 

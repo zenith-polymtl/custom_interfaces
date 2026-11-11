@@ -8,6 +8,7 @@ uint8 BLOCKED = 3      # aucune trajectoire sûre ne passe la prochaine porte : 
 uint8 HOLDING = 4      # tient un point (manches au neutre)
 uint8 DONE = 5         # fin de la référence atteinte, point final tenu
 uint8 NOT_GUIDED = 6   # pas armé ou pas en GUIDED : guidance se tait
+uint8 NO_POSE = 7      # pas de pose récente de mavros : guidance se tait (le drone peut être en GUIDED ; ArduPilot tient après GUID_TIMEOUT)
 
 std_msgs/Header header
 uint8 mode               # constante de NavMode suivie

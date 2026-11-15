@@ -29,6 +29,7 @@ set(msg_files
   "msg/TargetImage.msg"
   "msg/GimbalState.msg"
   "msg/GimbalCommand.msg"
+  "msg/GimbalTarget.msg"
   "msg/SceneFrame.msg"
   "msg/ServoControl.msg"
   "msg/MissionState.msg"

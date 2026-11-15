@@ -46,6 +46,14 @@ set(msg_files
   "msg/NavIntent.msg"
   "msg/VelocityIntent.msg"
   "msg/GuidanceStatus.msg"
+  "msg/GeoPolygon.msg"
+  "msg/GeoCircle.msg"
+  "msg/DroneStatus.msg"
+  "msg/DronePosition.msg"
+  "msg/MissionStatus.msg"
+  "msg/MissionGeometry.msg"
+  "msg/AircraftSummary.msg"
+  "msg/TrafficSummary.msg"
 )
 
 

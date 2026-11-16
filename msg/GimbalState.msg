@@ -1,3 +1,10 @@
-string mode
-float32 pitch
-float32 yaw
+# État du gimbal D80, publié par gimbal_target (hexa_ws gimbal_driver) sur GIMBAL_STATE à 2 Hz
+std_msgs/Header header
+bool connected      # true quand le D80 répond
+string mode         # mode du D80 (angle_control, head_lock...)
+float32 pitch       # deg, + = vers le haut
+float32 yaw         # deg par rapport au drone, + = vers la gauche
+float32 roll        # deg
+float32 zoom        # facteur de zoom (2.5 = x2,5)
+bool recording      # true pendant un enregistrement vidéo
+bool link_lost      # true : plus de cible du sol depuis cmd_timeout ; le gimbal garde la dernière

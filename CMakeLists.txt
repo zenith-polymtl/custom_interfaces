@@ -54,6 +54,7 @@ set(msg_files
   "msg/MissionGeometry.msg"
   "msg/AircraftSummary.msg"
   "msg/TrafficSummary.msg"
+  "msg/TrackerStatus.msg"
 )
 
 
